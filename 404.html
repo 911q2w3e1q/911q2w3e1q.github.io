@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Nexus glance over · 正在前往新地址</title>
+<meta name="robots" content="noindex,nofollow" />
+<meta http-equiv="refresh" content="0;url=https://acc3017b2fd5712d7.app.workbuddy.host/?sharecode=WEESZBU7NF" />
+<style>
+  html,body{height:100%;margin:0}
+  body{display:flex;align-items:center;justify-content:center;background:#0e1116;color:#e8edf4;
+       font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+  .box{text-align:center;padding:28px;max-width:420px}
+  .logo{width:56px;height:56px;margin:0 auto 18px;border-radius:16px;display:flex;align-items:center;
+        justify-content:center;font-size:26px;font-weight:700;color:#fff;
+        background:linear-gradient(135deg,#5b8cff,#8a5bff);box-shadow:0 8px 28px rgba(91,140,255,.28)}
+  h1{font-size:19px;margin:0 0 8px;font-weight:600}
+  p{margin:0 0 22px;color:#93a0b4;font-size:14px}
+  a{display:inline-block;padding:11px 22px;border-radius:10px;text-decoration:none;color:#fff;
+    background:linear-gradient(135deg,#5b8cff,#8a5bff);font-size:14px}
+  .spin{width:18px;height:18px;margin:0 auto 16px;border:2px solid rgba(255,255,255,.18);
+        border-top-color:#8ab4ff;border-radius:50%;animation:r .8s linear infinite}
+  @keyframes r{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<div class="box">
+  <div class="logo">N</div>
+  <div class="spin"></div>
+  <h1>站点已迁移</h1>
+  <p>正在前往新地址，请稍候…</p>
+  <a id="go" href="https://acc3017b2fd5712d7.app.workbuddy.host/?sharecode=WEESZBU7NF">立即前往新站 →</a>
+</div>
+<script>
+(function(){
+  // 老域名只做门牌：任意路径都跳到新站的同名路径，并保留访问凭据与查询参数
+  var BASE = 'https://acc3017b2fd5712d7.app.workbuddy.host';
+  var CODE = 'WEESZBU7NF';
+  var p = location.pathname || '/';
+  if (p === '/index.html') p = '/';
+  var q;
+  try { q = new URLSearchParams(location.search || ''); }
+  catch (e) { q = null; }
+  var target;
+  if (q) { q.set('sharecode', CODE); target = BASE + p + '?' + q.toString() + (location.hash || ''); }
+  else   { target = BASE + p + '?sharecode=' + CODE + (location.hash || ''); }
+  var a = document.getElementById('go');
+  if (a) a.href = target;
+  location.replace(target);
+})();
+</script>
+</body>
+</html>
